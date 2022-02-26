@@ -55,6 +55,16 @@ h3 {
     justify-content: flex-end;
 }
 
+.download-btn {
+    width: 208px;
+height: 47px;
+background: #FF6464;
+border-radius: 2px;
+border: 0ch;
+margin-top: 38px;
+margin-bottom: 71px;
+}
+
 .nav__list {
     display: flex;
 }
@@ -99,6 +109,14 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
+}
+
+.recent-posts__link {
+    width: 208px;
+height: 20px;
+font-size: 16px;
+text-align: right;
+color: #00A8CC;
 }
 
 .recent-posts__articles {
@@ -150,11 +168,13 @@ h3 {
 .
 
 .work__img-wrap {
+    
     width: 246px;
     height: 180px;
   margin-left: 18px;
   margin-left: 165px;
   align-items: center;
+ 
 }
 
 .work__img {
