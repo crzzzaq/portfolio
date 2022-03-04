@@ -36,6 +36,7 @@ h3 {
 
 .wrapper {
     min-height: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -47,6 +48,7 @@ h3 {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
 .header__container {
@@ -71,6 +73,54 @@ margin-bottom: 71px;
 
 .nav__item {
     margin-left: 33px;
+}
+
+.header-burger {
+    width: 30px;
+    height: 20px;
+   display: none;
+    margin-right: 18px;
+align-items: center;
+}
+
+.header-burger__el {
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: relative;
+}
+
+.header-burger__el::before,
+.header-burger__el::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #21243D;
+    position: absolute;
+}
+
+.header-burger__el::before {
+    top: -9px;
+}
+
+.header-burger__el::after {
+    bottom: -9px;
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding-top: 20px;
+
+        flex: end;
+    }
+    
+    .nav {
+        display: none;
+    }
+    .header-burger {
+        display: flex;
+        
+    }
 }
 
 .about__container {
