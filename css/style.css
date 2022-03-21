@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 * {
     box-sizing: border-box;
 }
@@ -57,6 +48,7 @@ h3 {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
+    
 }
 
 .header__container {
@@ -86,9 +78,9 @@ margin-bottom: 71px;
 .header-burger {
     width: 30px;
     height: 20px;
-    display: none;
-    align-items: center;
+   display: none;
     margin-right: 18px;
+align-items: center;
 }
 
 .header-burger__el {
@@ -118,14 +110,16 @@ margin-bottom: 71px;
 @media (max-width: 480px) {
     .header {
         padding-top: 20px;
-    }
 
+        flex: end;
+    }
+    
     .nav {
         display: none;
     }
-
     .header-burger {
         display: flex;
+        
     }
 }
 
@@ -161,12 +155,12 @@ margin-bottom: 71px;
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
-    }
 
+    }
     .about__info {
+       
         padding: 0px 19px;
     }
-
     .about__avatar {
         width: 170px;
         height: 170px;
@@ -182,6 +176,14 @@ margin-bottom: 71px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
+}
+
+.recent-posts__link {
+    width: 208px;
+height: 20px;
+font-size: 16px;
+text-align: right;
+color: #00A8CC;
 }
 
 .recent-posts__articles {
@@ -217,88 +219,134 @@ margin-bottom: 71px;
     margin: 0px 26px;
 }
 
-@media (max-width: 480px) {
-    .recent-posts__title {
-        font-size: 18px;
-    }
+.featured__works {
+    margin-top: 36px;
+}
 
-    .recent-posts__top {
-        justify-content: center;
-        margin-bottom: 18px;
-    }
-
-    .recent-posts__link {
-        display: none;
-    }
-
-    .recent-posts__articles {
-        flex-direction: column;
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-
-    .recent-posts__article {
-        margin-right: 0;
-        padding: 15px 20px 22px;
-        margin-bottom: 17px;
-    }
+.featured {
+    padding-top:32px ;
+    
 }
 
 .work {
     display: flex;
-    padding: 33px 0px;
-    border-bottom: 1px solid #E0E0E0;
+   padding: 13px 6px;
+
 }
+.
 
 .work__img-wrap {
-    max-width: 246px;
-    max-height: 180px;
-    overflow: hidden;
-    flex-shrink: 0;
-    border-radius: 6px;
+    
+    width: 246px;
+    height: 180px;
+  margin-left: 18px;
+  margin-left: 165px;
+  align-items: center;
+ 
 }
 
 .work__img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    width: 246px;
+height: 180px;
+flex-shrink: 0;
 }
+
+.work__title {
+    width: 337px;
+height: 44px;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 44px;
+}
+
 
 .work__date-block {
     display: flex;
 }
 
 .work__date {
-    background: #142850;
-    border-radius: 16px;
-    color: #FFFFFF;
-    min-height: 25px;
-    min-width: 62px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 900;
+    
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 60px;
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px;) {
+    .featured__conteiner {
+        
+    }
+
     .featured__works {
-        display: flex;
-        width: 95%;
-        overflow: auto;
+display: flex;
+width: 94%;
+overflow: auto;
     }
 
     .work {
         flex-direction: column;
-        flex: 0 0 100%;
-        margin-right: 2.5%;
+        width: 100%;
+        flex: 0 0 100;
+        margin-right: 6%;
     }
 
     .work__img-wrap {
         max-width: 100%;
         max-height: 230px;
-        overflow: hidden;
-        flex-shrink: 0;
-        border-radius: 6px;
+        
+
+    }
+}
+
+.work__category {
+   
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 29px;
+
+}
+
+.work__text {
+   
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+
+}
+
+@media (max-width: 480px) {
+
+    .recent-posts__title {
+         font-size: 18px;
+    }
+
+
+    .recent-posts__top {
+         margin-bottom: 18px;
+        justify-content: center;
+      
+    }
+    .recent-posts__link {
+        display: none;
+        
+    }
+    .recent-posts__articles {
+        flex-direction: column;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .recent-posts__article {
+        margin-right: 0%;
+       
+        padding: 15px 20px 22px;
+        margin-bottom: 17px;
+    }
+
+    .work__img-wrap {
+
     }
 }
